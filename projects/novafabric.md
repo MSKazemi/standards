@@ -5,6 +5,8 @@
 **Research baseline:** 2026-11-21 (Europe/Rome). **Public project snapshot:** [`main` @ `4f89480c`](https://github.com/MSKazemi/novafabric/tree/4f89480c2de83f0f51003cb096db58b9904a4ce5).  
 **Review status:** Candidate relevance and reported implementation states are documented for research, not independently certified or verified.
 
+**Inventory:** 264 references across 14 numbered categories. [How to use this register](../docs/how-to-use-standards.md) · [NovaFabric adoption workplan](novafabric-standards-adoption-plan.md) · [Machine-readable CSV](../data/novafabric-standards.csv).
+
 **Scope:** Broad technical and regulatory *candidate registry*, not a claim that every item must be implemented. Covers formal standards, specifications, RFCs, regulations, voluntary frameworks, and industry guidance (identified separately).
 
 **Research priorities:** P0 = directly shapes NovaFabric evidence/trust/replay; P1 = important interoperability and customer trust; P2 = vertical-specific or useful near-term; P3 = monitoring/future only. These are *relevance tiers*, not GitHub issue urgency or a commitment to implement.
@@ -290,6 +292,67 @@
 | ISO 9001 | ISO standard | P3 | General quality management processes | Assess / not verified |
 | W3C WCAG 2.2 | W3C Recommendation | P2 | Accessible evidence-review dashboard | Assess / not verified |
 
+## Additional interoperability and assurance candidates (37; researched 2026-11-21)
+
+These **37 new references** are research candidates with publisher/specification links. Their inclusion does **not** mean that NovaFabric implements them or that a requirement is applicable. The four additions below cover existing gaps in the original 227-entry landscape. Research priority (P0-P3) is not GitHub issue severity.
+
+## 11. 11. Evidence transport, canonical records and provenance validation (10)
+
+| Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
+|---|---|---|---|---|
+| [RFC 9421 — HTTP Message Signatures](https://www.rfc-editor.org/info/rfc9421/) | IETF Standards Track | P1 | Optional end-to-end authentication of evidence API requests and responses; verify covered fields and replay resistance | Assess / not verified |
+| [RFC 9530 — HTTP Digest Fields](https://www.rfc-editor.org/info/rfc9530/) | IETF Standards Track | P1 | Portable Content-Digest and Repr-Digest for transferred evidence; digests alone do not authenticate senders | Assess / not verified |
+| [RFC 9535 — JSONPath](https://www.rfc-editor.org/info/rfc9535/) | IETF Standards Track | P2 | Portable queries for structured evidence and assertions; no user query execution implied | Assess / not verified |
+| [RFC 9457 — Problem Details for HTTP APIs](https://www.rfc-editor.org/info/rfc9457/) | IETF Standards Track | P2 | Machine-readable non-sensitive error responses for future evidence APIs | Assess / not verified |
+| [RFC 9562 — UUID](https://www.rfc-editor.org/info/rfc9562/) | IETF Standards Track | P2 | Interoperable globally unique IDs for runs, receipts and events; preserve existing IDs | Assess / not verified |
+| [RFC 3339 / RFC 9557 — Internet timestamps](https://www.rfc-editor.org/info/rfc3339/) | IETF Standards Track (base and update) | P1 | Explicit UTC offsets and consistent timestamp parsing; distinguish event time from trusted TSA time | Assess / not verified |
+| [RFC 8610 / RFC 9682 — CDDL](https://www.rfc-editor.org/info/rfc8610/) | IETF Standards Track (base and update) | P2 | Formal definition of optional CBOR/COSE exchange profiles without replacing capsule JSON schemas | Assess / not verified |
+| [W3C RDF Dataset Canonicalization 1.0 (RDFC-1.0)](https://www.w3.org/TR/rdf-canon/) | W3C Recommendation | P1 | Stable hashes and possible signatures for semantically equivalent provenance RDF datasets | Assess / not verified |
+| [W3C PROV-CONSTRAINTS](https://www.w3.org/TR/prov-constraints/) | W3C Recommendation | P1 | Semantic validation of PROV relations in addition to syntax/schema checks | Assess / not verified |
+| [W3C PROV-AQ](https://www.w3.org/TR/prov-aq/) | W3C Working Group Note | P2 | Provenance record discovery and query patterns for optional sharing APIs | Assess / not verified |
+
+## 12. 12. Agent delegation, authorization and continuous access (13)
+
+| Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
+|---|---|---|---|---|
+| [RFC 8693 — OAuth 2.0 Token Exchange](https://www.rfc-editor.org/info/rfc8693/) | IETF Standards Track | P1 | Delegation and impersonation boundaries for agent-to-tool chains; keep actor and subject distinct | Assess / not verified |
+| [RFC 8707 — OAuth 2.0 Resource Indicators](https://www.rfc-editor.org/info/rfc8707/) | IETF Standards Track | P1 | Audience-bound access tokens to reduce cross-service token confusion | Assess / not verified |
+| [RFC 9396 — OAuth 2.0 Rich Authorization Requests](https://www.rfc-editor.org/info/rfc9396/) | IETF Standards Track | P1 | Fine-grained requested tool actions, resource names and constraints rather than broad scopes | Assess / not verified |
+| [RFC 9470 — OAuth 2.0 Step-Up Authentication](https://www.rfc-editor.org/info/rfc9470/) | IETF Standards Track | P2 | Optional reauthentication on sensitive evidence export or administrative operations | Assess / not verified |
+| [RFC 9728 — OAuth Protected Resource Metadata](https://www.rfc-editor.org/info/rfc9728/) | IETF Standards Track | P1 | Discover authorization-server requirements on protected agent/tool resource endpoints | Assess / not verified |
+| [RFC 9068 — JWT Profile for OAuth 2.0 Access Tokens](https://www.rfc-editor.org/info/rfc9068/) | IETF Standards Track | P2 | Interoperable JWT access-token claims for server mode, not for offline local mode | Assess / not verified |
+| [RFC 8414 — OAuth Authorization Server Metadata](https://www.rfc-editor.org/info/rfc8414/) | IETF Standards Track | P2 | Issuer and endpoint discovery for standards-based server authorization | Assess / not verified |
+| [OpenID AuthZEN Authorization API 1.0](https://openid.net/specs/authorization-api-1_0-final.html) | OpenID Final Specification (2026-01) | P1 | Interoperable PDP/PEP decision interface for policy-enforced evidence access | Assess / not verified |
+| [OpenID Federation 1.1](https://openid.net/specs/openid-federation-1_1-final.html) | OpenID Final Specification (2026-05) | P2 | Signed federation trust chains when multiple organizations exchange receipts | Assess / not verified |
+| [OpenID Shared Signals Framework 1.0](https://openid.net/specs/openid-sharedsignals-framework-1_0-final.html) | OpenID Final Specification (2025) | P2 | Security event sharing between trusted participants; conditional on server integrations | Assess / not verified |
+| [OpenID CAEP 1.0](https://openid.net/specs/openid-caep-1_0-final.html) | OpenID Final Specification (2025) | P2 | Session revocation and continuous authorization signals for long-running agents | Assess / not verified |
+| [NIST SP 800-162 — Attribute-Based Access Control](https://csrc.nist.gov/pubs/sp/800/162/upd2/final) | NIST guidance | P1 | Define actor, resource, action, environment attributes and policy-decision evidence | Assess / not verified |
+| [NIST SP 800-207 — Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | NIST guidance | P1 | Server-side least privilege and explicit trust boundaries; not required for local CLI use | Assess / not verified |
+
+## 13. 13. Data lifecycle, product security and vulnerability communication (9)
+
+| Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
+|---|---|---|---|---|
+| [NIST SP 800-88 Rev. 2 (2025)](https://csrc.nist.gov/pubs/sp/800/88/r2/final) | NIST guidance (final) | P1 | Distinguish cryptographic erase, media sanitization and retained immutable evidence; prove limits of deletion | Assess / not verified |
+| [ISO/IEC 20889:2018](https://www.iso.org/standard/69373.html) | ISO/IEC international standard | P1 | Terminology and residual re-identification risk for PII de-identification/redaction evidence | Assess / not verified |
+| [ISO/IEC 29147:2018](https://www.iso.org/standard/72311.html) | ISO/IEC international standard (revision in progress) | P1 | Coordinated vulnerability disclosure policy and communication for an evidence-security product | Assess / not verified |
+| [ISO/IEC 30111:2019](https://www.iso.org/standard/69725.html) | ISO/IEC international standard (revision in progress) | P1 | Intake, triage, remediation and traceable vulnerability-handling workflows | Assess / not verified |
+| [OpenSSF OSPS Baseline v2026.08.28](https://baseline.openssf.org/) | OpenSSF community security baseline | P1 | Maturity-tiered OSS project security checklist; compare CI/release posture and retain evidence | Assess / not verified |
+| [OASIS CSAF 2.1 (Committee Specification 01)](https://docs.oasis-open.org/csaf/csaf/v2.1/csaf-v2.1.html) | OASIS Committee Specification (2026-11; not yet an OASIS Standard) | P2 | Structured security advisories for future product vulnerability disclosures; verify profile before export | Assess / not verified |
+| [OpenVEX v0.2.0](https://github.com/openvex/spec/blob/main/OPENVEX-SPEC.md) | Community draft specification | P2 | Machine-readable vulnerability applicability statements linked to released components | Assess / not verified |
+| [ISO/IEC 27004:2016](https://www.iso.org/standard/64120.html) | ISO/IEC international standard (revision in progress) | P2 | Measurement and monitoring plan for information-security controls and their effectiveness | Assess / not verified |
+| [ISO 19011:2026](https://www.iso.org/standard/19011) | ISO international standard (guidelines) | P2 | Repeatable internal audit methods for management-system evidence packs, not certification | Assess / not verified |
+
+## 14. 14. Verification, measurement and reproducible software research (5)
+
+| Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
+|---|---|---|---|---|
+| [IEEE 1012-2024](https://ieeesystemscouncil.org/standards/system-engineering-standards) | IEEE standard | P1 | Independent verification and validation planning for replay, signatures and negative tests | Assess / not verified |
+| [ISO/IEC/IEEE 29148:2018](https://www.iso.org/standard/72089.html) | Joint international standard (revision draft under development) | P2 | Trace requirements to evidence artefacts, acceptance criteria and version-pinned tests | Assess / not verified |
+| [ISO/IEC 25023:2016](https://www.iso.org/standard/35747.html) | ISO/IEC international standard (revision draft under development) | P2 | Quality measurements for reliability, correctness, performance and maintainability | Assess / not verified |
+| [Citation File Format 1.2.0 (CFF)](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md) | Open community metadata specification | P2 | Machine-readable citations for reproducible evaluation software and benchmark artefacts | Assess / not verified |
+| [Software Heritage persistent identifiers (SWHID) v1.2](https://www.swhid.org/swhid-specification/) | Open community identifier specification | P2 | Content-addressed source identifiers for archived code and reproducible experiment evidence | Assess / not verified |
+
 ## Version and currency review
 
 - **SCITT:** Add RFC 9943 and RFC 9942 (June 2026) as potential signed-statement and receipt interop targets. No migration should occur without a compatibility and threat-model RFC.
@@ -340,6 +403,6 @@
 - [OMB memoranda](https://www.whitehouse.gov/omb/information-resources/guidance/memoranda/)
 - [NovaFabric public conformance map](https://github.com/MSKazemi/novafabric/blob/main/docs/standards-conformance.md)
 
-**Total references in this baseline:** 227.
+**Total references in this baseline:** 264 (227 initial + 37 additional).
 
 **Register maintenance note:** Proposals above are not implementation authorizations. For live capability status, consult version-pinned source code, tests, and the public conformance document.
