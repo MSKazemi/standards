@@ -296,7 +296,7 @@
 
 These **37 new references** are research candidates with publisher/specification links. Their inclusion does **not** mean that NovaFabric implements them or that a requirement is applicable. The four additions below cover existing gaps in the original 227-entry landscape. Research priority (P0-P3) is not GitHub issue severity.
 
-## 11. 11. Evidence transport, canonical records and provenance validation (10)
+## 11. Evidence transport, canonical records and provenance validation (10)
 
 | Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
 |---|---|---|---|---|
@@ -311,7 +311,7 @@ These **37 new references** are research candidates with publisher/specification
 | [W3C PROV-CONSTRAINTS](https://www.w3.org/TR/prov-constraints/) | W3C Recommendation | P1 | Semantic validation of PROV relations in addition to syntax/schema checks | Assess / not verified |
 | [W3C PROV-AQ](https://www.w3.org/TR/prov-aq/) | W3C Working Group Note | P2 | Provenance record discovery and query patterns for optional sharing APIs | Assess / not verified |
 
-## 12. 12. Agent delegation, authorization and continuous access (13)
+## 12. Agent delegation, authorization and continuous access (13)
 
 | Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
 |---|---|---|---|---|
@@ -329,7 +329,7 @@ These **37 new references** are research candidates with publisher/specification
 | [NIST SP 800-162 — Attribute-Based Access Control](https://csrc.nist.gov/pubs/sp/800/162/upd2/final) | NIST guidance | P1 | Define actor, resource, action, environment attributes and policy-decision evidence | Assess / not verified |
 | [NIST SP 800-207 — Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | NIST guidance | P1 | Server-side least privilege and explicit trust boundaries; not required for local CLI use | Assess / not verified |
 
-## 13. 13. Data lifecycle, product security and vulnerability communication (9)
+## 13. Data lifecycle, product security and vulnerability communication (9)
 
 | Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
 |---|---|---|---|---|
@@ -343,7 +343,7 @@ These **37 new references** are research candidates with publisher/specification
 | [ISO/IEC 27004:2016](https://www.iso.org/standard/64120.html) | ISO/IEC international standard (revision in progress) | P2 | Measurement and monitoring plan for information-security controls and their effectiveness | Assess / not verified |
 | [ISO 19011:2026](https://www.iso.org/standard/19011) | ISO international standard (guidelines) | P2 | Repeatable internal audit methods for management-system evidence packs, not certification | Assess / not verified |
 
-## 14. 14. Verification, measurement and reproducible software research (5)
+## 14. Verification, measurement and reproducible software research (5)
 
 | Standard / specification | Class | Priority | NovaFabric relevance | Repo evidence status |
 |---|---|---|---|---|
