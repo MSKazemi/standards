@@ -2,13 +2,22 @@
 
 A version-aware, public index of **standards, specifications, protocols, guidance, and regulatory references** relevant to open-source engineering and research projects.
 
+## Start here
+
+**Using standards for NovaFabric?** Read the [plain-English NovaFabric quick start](docs/novafabric-start-here.md) first. It answers three questions: **what to verify now, what to consider later, and the first three concrete engineering jobs.** The full list of 264 references is supporting research, **not** 264 mandatory features or conformance claims.
+
 ## Project registers
 
 | Project | Register | Scope |
 |---|---|---|
 | [YazSes](https://github.com/MSKazemi/yazses) | [YazSes standards and applicability](projects/yazses.md) | Offline dictation, ASR/audio, multilingual text, accessibility, privacy/security, AI, open-source supply chains, desktop/agent interoperability, optional XR and biosignals |
+| [NovaFabric](https://github.com/MSKazemi/novafabric) | [NovaFabric standards and regulatory landscape](projects/novafabric.md) | AI agent run evidence, cryptographic verification, provenance, replay, governance, privacy, identity, supply-chain integrity, regulated sectors and scientific archiving |
 
-The YazSes register currently contains **98 reference entries across 10 categories**, originally researched on **2026-11-21**.
+The YazSes register contains **98 reference entries across 10 categories**, and the NovaFabric register contains **264 reference entries across 14 categories** (227 initial references + 37 additional candidates), based on research dated **2026-11-21**. Counts are per-project; overlapping references may appear in more than one register.
+
+## How to use the registers
+
+The [standards adoption workflow](docs/how-to-use-standards.md) explains how to assess legal applicability, choose a versioned technical profile, create independent conformance tests, and make appropriately scoped claims. The [adoption record template](templates/standard-adoption-record.md) is reusable across projects. NovaFabric also has a [prioritized workplan](projects/novafabric-standards-adoption-plan.md) and [filterable CSV](data/novafabric-standards.csv). Research priorities are not product task urgency or proof of compliance.
 
 ## How to interpret the lists
 
@@ -18,9 +27,10 @@ For each project, document a standard's scope, edition, applicability, mapped fe
 
 ## Project ownership and source of truth
 
-- **This repository** is the home for the cross-domain standards index and YazSes applicability inventory.
+- **This repository** is the home for the cross-domain standards index and the per-project YazSes and NovaFabric applicability inventories.
 - **[YazSes](https://github.com/MSKazemi/yazses)** remains the source of truth for actual software behavior, tests, ADRs, research protocols and implementation decisions, including [AGENTS.md](https://github.com/MSKazemi/yazses/blob/main/AGENTS.md).
-- Proposed engineering work should link existing YazSes issues rather than duplicating their tracking here.
+- **[NovaFabric](https://github.com/MSKazemi/novafabric)** remains the source of truth for shipped software behavior, tests and conformance claims, including its [standards-conformance reference](https://github.com/MSKazemi/novafabric/blob/main/docs/standards-conformance.md).
+- Proposed engineering work should link existing project issues rather than duplicating their tracking here.
 - No private business or confidential material should be included in this public repository.
 
 ## Contribution / review
