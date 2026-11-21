@@ -1,5 +1,6 @@
 # NovaFabric — standards adoption and verification workplan
 
+**Quick summary:** [Start here — what to verify now and the first three jobs](../docs/novafabric-start-here.md).  
 **Research baseline:** 2026-11-21 (Europe/Rome) · **Companion:** [264-reference register](novafabric.md) · **Method:** [How to use standards](../docs/how-to-use-standards.md).  
 **Status:** **Proposal only**; engineering tasks are not approved, scheduled or implemented by this document. The canonical product implementation and conformance claims live in [MSKazemi/novafabric](https://github.com/MSKazemi/novafabric) and its [standards conformance documentation](https://github.com/MSKazemi/novafabric/blob/main/docs/standards-conformance.md).
 
