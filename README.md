@@ -2,6 +2,10 @@
 
 A version-aware, public index of **standards, specifications, protocols, guidance, and regulatory references** relevant to open-source engineering and research projects.
 
+## Start here
+
+**Using standards for NovaFabric?** Read the [plain-English NovaFabric quick start](docs/novafabric-start-here.md) first. It answers three questions: **what to verify now, what to consider later, and the first three concrete engineering jobs.** The full list of 264 references is supporting research, **not** 264 mandatory features or conformance claims.
+
 ## Project registers
 
 | Project | Register | Scope |
