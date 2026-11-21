@@ -9,7 +9,11 @@ A version-aware, public index of **standards, specifications, protocols, guidanc
 | [YazSes](https://github.com/MSKazemi/yazses) | [YazSes standards and applicability](projects/yazses.md) | Offline dictation, ASR/audio, multilingual text, accessibility, privacy/security, AI, open-source supply chains, desktop/agent interoperability, optional XR and biosignals |
 | [NovaFabric](https://github.com/MSKazemi/novafabric) | [NovaFabric standards and regulatory landscape](projects/novafabric.md) | AI agent run evidence, cryptographic verification, provenance, replay, governance, privacy, identity, supply-chain integrity, regulated sectors and scientific archiving |
 
-The YazSes register contains **98 reference entries across 10 categories**, and the NovaFabric register contains **227 reference entries across 10 categories**, both based on research dated **2026-11-21**. Counts are per-project; overlapping references may appear in more than one register.
+The YazSes register contains **98 reference entries across 10 categories**, and the NovaFabric register contains **264 reference entries across 14 categories** (227 initial references + 37 additional candidates), based on research dated **2026-11-21**. Counts are per-project; overlapping references may appear in more than one register.
+
+## How to use the registers
+
+The [standards adoption workflow](docs/how-to-use-standards.md) explains how to assess legal applicability, choose a versioned technical profile, create independent conformance tests, and make appropriately scoped claims. The [adoption record template](templates/standard-adoption-record.md) is reusable across projects. NovaFabric also has a [prioritized workplan](projects/novafabric-standards-adoption-plan.md) and [filterable CSV](data/novafabric-standards.csv). Research priorities are not product task urgency or proof of compliance.
 
 ## How to interpret the lists
 
