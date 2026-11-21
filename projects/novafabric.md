@@ -5,7 +5,7 @@
 **Research baseline:** 2026-11-21 (Europe/Rome). **Public project snapshot:** [`main` @ `4f89480c`](https://github.com/MSKazemi/novafabric/tree/4f89480c2de83f0f51003cb096db58b9904a4ce5).  
 **Review status:** Candidate relevance and reported implementation states are documented for research, not independently certified or verified.
 
-**Inventory:** 264 references across 14 numbered categories. [How to use this register](../docs/how-to-use-standards.md) · [NovaFabric adoption workplan](novafabric-standards-adoption-plan.md) · [Machine-readable CSV](../data/novafabric-standards.csv).
+**Inventory:** 264 references across 14 numbered categories. **[Start with the short practical guide](../docs/novafabric-start-here.md)** · [Complete adoption method](../docs/how-to-use-standards.md) · [Detailed workplan](novafabric-standards-adoption-plan.md) · [Machine-readable CSV](../data/novafabric-standards.csv).
 
 **Scope:** Broad technical and regulatory *candidate registry*, not a claim that every item must be implemented. Covers formal standards, specifications, RFCs, regulations, voluntary frameworks, and industry guidance (identified separately).
 
